@@ -6,9 +6,12 @@
  */
 
 #include "ModelDuck.h"
+#include "FlyNoWay.h"
+#include "Mute.h"
 
 ModelDuck::ModelDuck() {
-	// TODO Auto-generated constructor stub
+	flyBehavior = new FlyNoWay();
+	quackBehavior = new Mute();
 
 }
 
@@ -16,3 +19,6 @@ ModelDuck::~ModelDuck() {
 	// TODO Auto-generated destructor stub
 }
 
+void ModelDuck::display(){
+	cout<<"I am a model duck!";
+}

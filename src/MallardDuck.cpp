@@ -6,22 +6,24 @@
  */
 
 #include "MallardDuck.h"
+#include "FlyWithWings.h"
+#include "Quack.h"
+
 #include <iostream>
 using namespace std;
 
 MallardDuck::MallardDuck() {
-	// TODO Auto-generated constructor stub
+	flyBehavior = new FlyWithWings();
+	quackBehavior = new Quack();
 
 }
 
 MallardDuck::~MallardDuck() {
-	// TODO Auto-generated destructor stub
+	delete flyBehavior;
+	delete quackBehavior;
 }
 
 void MallardDuck::display(){
 	cout<<"I am a mallard duck!";
 }
 
-void MallardDuck::walk(){
-	cout<<"mallard walk";
-}

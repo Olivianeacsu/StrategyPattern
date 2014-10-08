@@ -17,7 +17,7 @@ public:
 	virtual ~Quack();
 	Quack();
 	virtual void quack(){
-		cout<<"Quack!";
+		cout<<"Quack!" << endl;
 	}
 };
 

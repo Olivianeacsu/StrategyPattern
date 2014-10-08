@@ -14,8 +14,10 @@ class RubberDuck: public Duck {
 public:
 	RubberDuck();
 	virtual ~RubberDuck() {
-		// TODO Auto-generated destructor stub
+		delete flyBehavior;
+		delete quackBehavior;
 	}
+	virtual void display();
 };
 
 #endif /* RUBBERDUCK_H_ */

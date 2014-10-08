@@ -11,6 +11,7 @@
 #include "QuackBehavior.h"
 
 class Duck {
+protected:
 	FlyBehavior* flyBehavior;
 	QuackBehavior* quackBehavior;
 public:
@@ -21,8 +22,7 @@ public:
 	virtual void display()=0;
 	virtual void performFly();
 	virtual void performQuack();
-	virtual void walk();
-
+	virtual void swim();
 };
 
 #endif /* DUCK_H_ */

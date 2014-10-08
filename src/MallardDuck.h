@@ -15,7 +15,7 @@ public:
 	MallardDuck();
 	virtual ~MallardDuck();
 	virtual void display();
-	void walk();
+
 };
 
 #endif /* MALLARDDUCK_H_ */

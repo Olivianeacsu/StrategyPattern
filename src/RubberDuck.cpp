@@ -6,9 +6,15 @@
  */
 
 #include "RubberDuck.h"
+#include "FlyNoWay.h"
+#include "Squeak.h"
 
 RubberDuck::RubberDuck() {
-	// TODO Auto-generated constructor stub
+	flyBehavior = new FlyNoWay();
+	quackBehavior = new Squeak();
 
 }
 
+void RubberDuck::display(){
+	cout<<"I am a rubber duck!";
+}

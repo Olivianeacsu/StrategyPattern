@@ -28,6 +28,6 @@ void Duck::performQuack(){
 	quackBehavior->quack();
 }
 
-void Duck::walk(){
-	cout<<"Duck walk";
+void Duck::swim(){
+	cout << "i am swimming" << endl;
 }

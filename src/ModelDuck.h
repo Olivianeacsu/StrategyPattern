@@ -14,6 +14,7 @@ class ModelDuck: public Duck {
 public:
 	ModelDuck();
 	virtual ~ModelDuck();
+	virtual void display();
 };
 
 #endif /* MODELDUCK_H_ */
