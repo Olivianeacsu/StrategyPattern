@@ -18,7 +18,7 @@ public:
 	FlyNoWay();
 	virtual ~FlyNoWay();
 	virtual void fly(){
-			cout<<"I can't fly!";
+			cout<<"I can't fly!" << endl;
 		}
 };
 

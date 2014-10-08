@@ -22,3 +22,4 @@ void Mute::quack(){
 	cout<<"I am mute." << endl;
 }
 
+
